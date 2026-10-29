@@ -1,0 +1,192 @@
+[
+ {
+  "check": "M1 App. A / (17) unitary and adjoint",
+  "passed": true,
+  "evidence": "max dev 2.2e-16"
+ },
+ {
+  "check": "M1 (19) mixed bases MUB with D; ZZ, XX not",
+  "passed": true,
+  "evidence": "{'ZZ': [0.0, 0.5], 'ZX': [0.25], 'XZ': [0.25], 'XX': [0.0, 0.5]}"
+ },
+ {
+  "check": "M1 Lemma III.1 (18) and relation (3)",
+  "passed": true,
+  "evidence": "max dev 1.1e-16"
+ },
+ {
+  "check": "M1 (20) D = J_A xor S",
+  "passed": true,
+  "evidence": "all 16 (S, J_A)"
+ },
+ {
+  "check": "M1 Sec. II-C / Rem. II.1 average states I/4",
+  "passed": true,
+  "evidence": "message, 16-state, 8-state ensembles"
+ },
+ {
+  "check": "M2 Prop. III.2 actual = virtual statistics",
+  "passed": true,
+  "evidence": "2054 attacks, max dev 6.7e-16"
+ },
+ {
+  "check": "M2 Lemma III.3 H(S|J_A E,det) = H(D|E,det)",
+  "passed": true,
+  "evidence": "max dev 2.9e-15"
+ },
+ {
+  "check": "M2 H(S|E,det) = 2 without J_A (no-signalling)",
+  "passed": true,
+  "evidence": "max dev 1.8e-15"
+ },
+ {
+  "check": "M2 (25)/(27)/Prop. V.1 H(D|E,det) >= r(e_pool)",
+  "passed": true,
+  "evidence": "3000 attacks, min gap 2.42e-08"
+ },
+ {
+  "check": "M2 Prop. V.3 receiver misalignment",
+  "passed": true,
+  "evidence": "946 attacks, min gap 1.52e-05"
+ },
+ {
+  "check": "M2 tightness: Bell dephasing attains r(e)",
+  "passed": true,
+  "evidence": "max |gap| 6.7e-16 on 16 points"
+ },
+ {
+  "check": "M2 counterexample: ZZ/XX test invalid",
+  "passed": true,
+  "evidence": "parity attack e_ZZ=0, H=1 < r(0)=2; random attacks min gap_ZZ -0.349"
+ },
+ {
+  "check": "M3 Prop. V.4 H(D~|E) >= r_q(e)",
+  "passed": true,
+  "evidence": "1500 cases, min gap 8.83e-07"
+ },
+ {
+  "check": "M3 Remark V.5 bound (45)",
+  "passed": true,
+  "evidence": "min slack 0.009"
+ },
+ {
+  "check": "M3 q_src correction is necessary",
+  "passed": true,
+  "evidence": "144 cases violate the uncorrected r(e) (min -0.107)"
+ },
+ {
+  "check": "M4 Prop. V.2 thinning (33)",
+  "passed": true,
+  "evidence": "POVM dev 5.6e-17; click-prob spread 0.170 -> 0.0016 (eta0=0.568)"
+ },
+ {
+  "check": "M4 (35)-(36) dark estimators",
+  "passed": true,
+  "evidence": "unbiased within 4 s.d.; pdc=0: e_sig 0.020 vs 0.0200, pdc=0.001: e_sig 0.020 vs 0.0200, pdc=0.01: e_sig 0.030 vs 0.0300, pdc=0.05: e_sig 0.050 vs 0.0501"
+ },
+ {
+  "check": "M4 (40) cross-talk relation",
+  "passed": true,
+  "evidence": "exact dev 1.2e-16, MC dev 1.1e-03"
+ },
+ {
+  "check": "M4 LP (39) exact = inversion; box gives upward margin",
+  "passed": true,
+  "evidence": "max |LP-inv| 3.1e-16"
+ },
+ {
+  "check": "M5 (47) global tangent; beta-Lambda<=0; beta<=3Lambda/4",
+  "passed": true,
+  "evidence": "min r-tangent -1.1e-16, max(beta-Lambda) -0.019, max(beta-3Lambda/4) -3.8e-04"
+ },
+ {
+  "check": "M5 Cor. VI.3 r_q tangent",
+  "passed": true,
+  "evidence": "min -1.1e-16"
+ },
+ {
+  "check": "M5 App. B range = mu Lambda; (52) variance bound",
+  "passed": true,
+  "evidence": "max Var / bound = 0.900, 0.900, 0.980, 0.900, 0.955"
+ },
+ {
+  "check": "M5 (55)/(74) worst accepted value",
+  "passed": true,
+  "evidence": "max dev 2.2e-16"
+ },
+ {
+  "check": "M6 Table I reproduced",
+  "passed": true,
+  "evidence": "18 entries"
+ },
+ {
+  "check": "M6 Table II reproduced",
+  "passed": true,
+  "evidence": "16 entries"
+ },
+ {
+  "check": "M6 Prop. VII.1 symmetric optimum",
+  "passed": true,
+  "evidence": "free 2-D optimum (pA, pB) = (0.1985, 0.1985), (0.1985, 0.1985), (0.1985, 0.1985)"
+ },
+ {
+  "check": "M6 Prop. VIII.1 exponents (88)-(89)",
+  "passed": true,
+  "evidence": "2*: p -0.335/-0.333, alpha-1 -0.662/-0.667, deficit -0.337/-0.333; 2**: p -0.253/-0.250, alpha-1 -0.761/-0.750, deficit -0.245/-0.250"
+ },
+ {
+  "check": "M7 (69)/(75)-(76) valid upper bounds",
+  "passed": true,
+  "evidence": "MC abort <= Hoeffding and <= Bernstein at all L"
+ },
+ {
+  "check": "M10 exact abort agrees with MC",
+  "passed": true,
+  "evidence": "max |MC-exact|/sigma 1.52"
+ },
+ {
+  "check": "M10 Hoeffding (69) and Bernstein >= exact",
+  "passed": true,
+  "evidence": "35 points with exact value above 1e-300"
+ },
+ {
+  "check": "M8 original schedule over-certifies",
+  "passed": true,
+  "evidence": "e=0 while kappa=p, 8 values of p"
+ },
+ {
+  "check": "M8 Protocol 2* detects the same attack",
+  "passed": true,
+  "evidence": "max |e - 3p/4| 0.0021"
+ },
+ {
+  "check": "M8 early J_A counterexample",
+  "passed": true,
+  "evidence": "e = 0, kappa = 1"
+ },
+ {
+  "check": "M8 sifting rates (11), (12), Rem. II.1",
+  "passed": true,
+  "evidence": "max dev 3.9e-04"
+ },
+ {
+  "check": "M9 leftover hash (65), classical toy",
+  "passed": true,
+  "evidence": "48 (leakage, l) pairs, max d/bound 0.984"
+ },
+ {
+  "check": "M11 adversarial search: no violation of (27)",
+  "passed": true,
+  "evidence": "38 optimised attacks, min gap 1.8e-08"
+ },
+ {
+  "check": "M11 optimum reaches r(e) for dim E' >= 4",
+  "passed": true,
+  "evidence": "max optimised gap 1.4e-05 (dE=4, 8); dE=2 stays >= 0.025"
+ },
+ {
+  "check": "M11 control: same search breaks the ZZ test",
+  "passed": true,
+  "evidence": "optimised gaps -1.000 to -0.662"
+ }
+]

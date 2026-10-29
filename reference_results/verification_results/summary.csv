@@ -1,0 +1,39 @@
+check,passed,evidence
+M1 App. A / (17) unitary and adjoint,True,max dev 2.2e-16
+"M1 (19) mixed bases MUB with D; ZZ, XX not",True,"{'ZZ': [0.0, 0.5], 'ZX': [0.25], 'XZ': [0.25], 'XX': [0.0, 0.5]}"
+M1 Lemma III.1 (18) and relation (3),True,max dev 1.1e-16
+M1 (20) D = J_A xor S,True,"all 16 (S, J_A)"
+M1 Sec. II-C / Rem. II.1 average states I/4,True,"message, 16-state, 8-state ensembles"
+M2 Prop. III.2 actual = virtual statistics,True,"2054 attacks, max dev 6.7e-16"
+"M2 Lemma III.3 H(S|J_A E,det) = H(D|E,det)",True,max dev 2.9e-15
+"M2 H(S|E,det) = 2 without J_A (no-signalling)",True,max dev 1.8e-15
+"M2 (25)/(27)/Prop. V.1 H(D|E,det) >= r(e_pool)",True,"3000 attacks, min gap 2.42e-08"
+M2 Prop. V.3 receiver misalignment,True,"946 attacks, min gap 1.52e-05"
+M2 tightness: Bell dephasing attains r(e),True,max |gap| 6.7e-16 on 16 points
+M2 counterexample: ZZ/XX test invalid,True,"parity attack e_ZZ=0, H=1 < r(0)=2; random attacks min gap_ZZ -0.349"
+M3 Prop. V.4 H(D~|E) >= r_q(e),True,"1500 cases, min gap 8.83e-07"
+M3 Remark V.5 bound (45),True,min slack 0.009
+M3 q_src correction is necessary,True,144 cases violate the uncorrected r(e) (min -0.107)
+M4 Prop. V.2 thinning (33),True,POVM dev 5.6e-17; click-prob spread 0.170 -> 0.0016 (eta0=0.568)
+M4 (35)-(36) dark estimators,True,"unbiased within 4 s.d.; pdc=0: e_sig 0.020 vs 0.0200, pdc=0.001: e_sig 0.020 vs 0.0200, pdc=0.01: e_sig 0.030 vs 0.0300, pdc=0.05: e_sig 0.050 vs 0.0501"
+M4 (40) cross-talk relation,True,"exact dev 1.2e-16, MC dev 1.1e-03"
+M4 LP (39) exact = inversion; box gives upward margin,True,max |LP-inv| 3.1e-16
+M5 (47) global tangent; beta-Lambda<=0; beta<=3Lambda/4,True,"min r-tangent -1.1e-16, max(beta-Lambda) -0.019, max(beta-3Lambda/4) -3.8e-04"
+M5 Cor. VI.3 r_q tangent,True,min -1.1e-16
+M5 App. B range = mu Lambda; (52) variance bound,True,"max Var / bound = 0.900, 0.900, 0.980, 0.900, 0.955"
+M5 (55)/(74) worst accepted value,True,max dev 2.2e-16
+M6 Table I reproduced,True,18 entries
+M6 Table II reproduced,True,16 entries
+M6 Prop. VII.1 symmetric optimum,True,"free 2-D optimum (pA, pB) = (0.1985, 0.1985), (0.1985, 0.1985), (0.1985, 0.1985)"
+M6 Prop. VIII.1 exponents (88)-(89),True,"2*: p -0.335/-0.333, alpha-1 -0.662/-0.667, deficit -0.337/-0.333; 2**: p -0.253/-0.250, alpha-1 -0.761/-0.750, deficit -0.245/-0.250"
+M7 (69)/(75)-(76) valid upper bounds,True,MC abort <= Hoeffding and <= Bernstein at all L
+M10 exact abort agrees with MC,True,max |MC-exact|/sigma 1.52
+M10 Hoeffding (69) and Bernstein >= exact,True,35 points with exact value above 1e-300
+M8 original schedule over-certifies,True,"e=0 while kappa=p, 8 values of p"
+M8 Protocol 2* detects the same attack,True,max |e - 3p/4| 0.0021
+M8 early J_A counterexample,True,"e = 0, kappa = 1"
+"M8 sifting rates (11), (12), Rem. II.1",True,max dev 3.9e-04
+"M9 leftover hash (65), classical toy",True,"48 (leakage, l) pairs, max d/bound 0.984"
+M11 adversarial search: no violation of (27),True,"38 optimised attacks, min gap 1.8e-08"
+M11 optimum reaches r(e) for dim E' >= 4,True,"max optimised gap 1.4e-05 (dE=4, 8); dE=2 stays >= 0.025"
+M11 control: same search breaks the ZZ test,True,optimised gaps -1.000 to -0.662

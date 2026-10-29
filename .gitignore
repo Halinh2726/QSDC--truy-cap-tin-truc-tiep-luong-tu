@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+verification/results/
+verification/figures/
+appendixD/figures/
+.vscode/
+.idea/
+.DS_Store
